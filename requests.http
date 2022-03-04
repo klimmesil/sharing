@@ -1,0 +1,18 @@
+# installez le package REST client sur vscode. Ca permet d'envoyer des requetes html facilement
+# constantes
+@hostname = http://[2a02:842b:803f:8f01:5f5e:607:2d21:7b86]
+
+### exemple de base. Requete de GET /
+GET {{hostname}}
+### exemple d'acces a un fichier /public/stylesheets/styles.css
+GET {{hostname}}/stylesheets/styles.css
+### exemple d'utilisation de token
+GET {{hostname}}/pagePrivee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUXVpbnQiLCJpYXQiOjE2NDU5NDEwMDZ9.ymAwzQJBrsy_F6VwNJhXBS6nUJo-41_HB2PnJhOCumk
+### exemple de transfert de donnees
+POST {{hostname}}/login
+Content-Type: application/json
+{
+    "username": "Quint",
+    "password": "asticot"
+}

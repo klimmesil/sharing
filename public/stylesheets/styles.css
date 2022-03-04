@@ -1,0 +1,68 @@
+* {
+    scrollbar-color: gray black;
+}
+
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+
+    scrollbar-color: yellow;
+}
+
+.banniere {
+    width: 100%;
+    height: 300px;
+    background: pink;
+    position: relative;
+    overflow: hidden;
+}
+
+.centreur {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+}
+
+.banniere > img {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    filter: brightness(40%);
+}
+
+strong {
+    user-select: none;
+    font-family: cursive;
+    font-size: 3em;
+    color: white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: inherit;
+    filter: brightness(25%);
+
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 2em;
+    font-family: cursive;
+}
